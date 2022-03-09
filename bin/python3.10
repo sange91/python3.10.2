@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+dir_path=$(dirname `readlink -f $0`)
+export LD_LIBRARY_PATH=$dir_path/../lib:${LD_LIBRARY_PATH}
+$dir_path/_python3.10 $@
